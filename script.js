@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Auto-play music on first interaction (Browsers block automatic autoplay)
+    // Auto-play music logic
     const music = document.getElementById('bg-music');
 
     const playMusic = () => {
@@ -76,13 +76,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.removeEventListener('click', playMusic);
                 document.removeEventListener('mousemove', playMusic);
                 document.removeEventListener('touchstart', playMusic);
+                document.removeEventListener('scroll', playMusic);
             })
             .catch(error => {
                 console.log("Autoplay prevented:", error);
             });
     };
 
+    // Try to play immediately
+    playMusic();
+
+    // Fallback: Play on first interaction if blocked
     document.addEventListener('click', playMusic);
     document.addEventListener('mousemove', playMusic);
     document.addEventListener('touchstart', playMusic);
+    document.addEventListener('scroll', playMusic);
 });
