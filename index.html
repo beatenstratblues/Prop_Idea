@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for romantic typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Floating Hearts Background -->
+        <div class="hearts-bg" id="hearts-bg"></div>
+
+        <h1 class="title">Will you be my Valentine?</h1>
+
+        <div class="scence-container">
+            <!-- The Illustration -->
+            <div class="illustration-wrapper">
+                <!-- Using the Oggy proposal image -->
+                <img src="oggy.webp" alt="Proposal Scene" class="proposal-img">
+
+                <!-- Face Overlays -->
+                <div class="face-overlay man-face">
+                    <img src="me.jpg" alt="Me" id="man-photo">
+                </div>
+
+                <div class="face-overlay woman-face">
+                    <img src="her.jpg" alt="Her" id="woman-photo">
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <button id="yes-btn" class="btn yes-btn">YES <span class="heart">♥</span></button>
+            <button id="no-btn" class="btn no-btn">NO</button>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="happydog.gif" alt="Happy Dog" class="dog-gif">
+            <!-- Alternative static dog: <img src="assets/dog_happy.jpg" ...> -->
+            <p class="success-message">
+                This dog is happy because he is the luckiest in the world right now,<br>
+                because you have said <strong>YES</strong> to him! <br>
+                <span class="heart-big">❤️</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

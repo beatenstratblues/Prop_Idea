@@ -1,0 +1,36 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background: Transparent so CSS can handle the romantic gradient -->
+    
+    <!-- Floor/Shadow -->
+    <ellipse cx="400" cy="540" rx="300" ry="20" fill="#000000" fill-opacity="0.1"/>
+
+    <!-- Man Kneeling (Left) -->
+    <g id="man">
+        <!-- Body -->
+        <path d="M250,540 L180,540 L180,450 Q180,400 230,400 L280,400 L280,540 Z" fill="#2c3e50"/> <!-- Leg kneeling -->
+        <path d="M280,540 L330,540 L330,480 L280,450 Z" fill="#2c3e50"/> <!-- Other leg -->
+        <path d="M230,400 L230,280 Q230,250 260,250 L320,250 Q350,250 350,280 L350,420 L300,450 L250,420 Z" fill="#2c3e50"/> <!-- Torso -->
+        <path d="M350,300 L400,350 L430,330" stroke="#2c3e50" stroke-width="15" stroke-linecap="round"/> <!-- Arm holding ring -->
+        
+        <!-- Placeholder Face Circle (Man) -->
+        <circle cx="290" cy="200" r="50" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,5"/>
+        <text x="290" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#7f8c8d">Your Photo</text>
+    </g>
+
+    <!-- Woman Standing (Right) -->
+    <g id="woman">
+        <!-- Dress/Body -->
+        <path d="M500,540 L450,540 L470,300 Q470,260 500,260 L560,260 Q590,260 590,300 L610,540 L560,540 Z" fill="#e74c3c"/>
+        <path d="M470,300 L440,380" stroke="#e74c3c" stroke-width="12" stroke-linecap="round"/> <!-- Arm surprised -->
+        <path d="M590,300 L620,380" stroke="#e74c3c" stroke-width="12" stroke-linecap="round"/> <!-- Arm surprised -->
+
+        <!-- Placeholder Face Circle (Woman) -->
+        <circle cx="530" cy="200" r="50" fill="#ecf0f1" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5"/>
+        <text x="530" y="205" font-family="Arial" font-size="14" text-anchor="middle" fill="#7f8c8d">Her Photo</text>
+    </g>
+
+    <!-- Ring Box -->
+    <rect x="420" y="320" width="20" height="20" fill="#f1c40f"/>
+    <circle cx="430" cy="315" r="5" fill="#ecf0f1" stroke="#f1c40f" stroke-width="2"/> <!-- Diamond -->
+
+</svg>
